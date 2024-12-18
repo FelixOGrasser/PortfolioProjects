@@ -79,8 +79,3 @@ DROP VIEW dbo.ElectricVehiclePopulation
 
 SELECT * FROM ElectricVehiclePopulation
 
---Average
-
-SELECT DISTINCT(EVP.County), SUM(EVP.Total_Models) FROM ElectricVehiclePopulation AS EVP
-GROUP BY EVP.County, EVP.Total_Models
-ORDER BY 1,2
